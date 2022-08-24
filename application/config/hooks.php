@@ -11,3 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/userguide3/general/hooks.html
 |
 */
+
+$hook['display_override'][] = array(
+	'class'  	=> 'Develbar',
+	'function' 	=> 'debug',
+	'filename' 	=> 'Develbar.php',
+	'filepath' 	=> 'third_party/DevelBar/hooks'
+);
